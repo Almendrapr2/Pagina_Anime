@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NeonAnime - Mira anime online</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <a href="#" class="logo">Neon<span>Anime</span></a>
+    <nav class="nav" id="nav">
+      <a href="#inicio">Inicio</a>
+      <a href="#populares">Populares</a>
+      <a href="#nuevos">Nuevos</a>
+      <a href="#accion">Acción</a>
+      <a href="#romance">Romance</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-label="Abrir menú">☰</button>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="hero-content">
+      <span class="badge">★ Destacado de la semana</span>
+      <h1 id="heroTitle">Cazadores del Alba</h1>
+      <p id="heroDesc">Un joven guerrero cruza mundos prohibidos para detener a las sombras que devoran el amanecer. Acción, magia y amistad en una aventura épica.</p>
+      <div class="hero-buttons">
+        <button class="btn btn-primary" id="heroPlay">▶ Ver ahora</button>
+        <button class="btn btn-ghost" id="heroInfo">+ Más info</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CARRUSELES -->
+  <main class="main" id="rows"></main>
+
+  <!-- MODAL REPRODUCTOR -->
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-box">
+      <button class="close" id="closeModal" aria-label="Cerrar">✕</button>
+      <video id="player" controls playsinline poster=""></video>
+      <div class="modal-info">
+        <h2 id="modalTitle"></h2>
+        <p id="modalMeta" class="meta"></p>
+        <p id="modalDesc"></p>
+        <h3>Episodios</h3>
+        <ul class="episodes" id="episodes"></ul>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>© 2026 NeonAnime · Proyecto demo con contenido de ejemplo</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
